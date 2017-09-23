@@ -15,8 +15,36 @@ body {
 
 /* Navbar */
 .header .slider {
-    background: #EEE;
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
     height: 600px;
+}
+
+.header .slider .intro {
+    height: 600px;
+    padding-top: 200px;
+    text-align: center;
+    color: #fff;
+}
+
+.header .slider .intro h2 {
+    margin: 0 auto;
+    font-size: 50px;
+    width: 600px;
+    border-top: 4px solid #FFF;
+    border-bottom: 3px solid #FFF;
+    padding: 5px 0;
+}
+
+.header .slider .intro button {
+    background: none;
+    color: #FFF;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid #FFF;
+    padding: 10px 25px;
+    cursor: pointer;
 }
 
 .header .navbar {
@@ -27,7 +55,12 @@ body {
 
 .header .navbar h2 {
     float: left;
-    text-transform: uppercase;
+}
+
+.header .navbar h2 a,
+.header .navbar ul li a {
+    color: #FFF;
+    text-decoration: none;
 }
 
 .header .navbar h2 span {
@@ -44,6 +77,11 @@ body {
 .header .navbar ul li {
     float: left;
     padding: 10px;
+}
+
+.header .navbar ul li a:hover,
+.header .navbar ul li.active a{
+    color: #16c76c;
 }
 
 /*=========Features==========*/
@@ -163,31 +201,30 @@ body {
     margin: 10px;
 }
 
-
 /*============= Contact me =================*/
 
-.contact-me{
+.contact-me {
     background-color: #252f31;
     overflow: hidden;
 }
 
 .contact-me .info,
-.contact-me .form{
+.contact-me .form {
     float: left;
     width: 50%;
 }
 
-.contact-me .info h2{
+.contact-me .info h2 {
     color: #FFF;
 }
 
-.contact-me .info p{
+.contact-me .info p {
     color: #676c6f;
 }
 
 /*=============== Footer =============*/
 
-.footer{
+.footer {
     background-color: #191e22;
     color: #676c6f;
     padding: 20px 0;
