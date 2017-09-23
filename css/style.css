@@ -1,38 +1,144 @@
 /* Main Rules */
 
-body{
-    background-color: #CCC;
+body {
     height: 4000px;
 }
-.container{
+
+.container {
     width: 1170px;
     margin: auto;
 }
 
+.clearfix{
+    clear: both;
+}
+
 /* Navbar */
-.header .slider{
+.header .slider {
     background: #EEE;
     height: 600px;
 }
-.header .navbar{
+
+.header .navbar {
     background-color: #252f31;
     color: #FFF;
     overflow: auto;
 }
-.header .navbar h2{
+
+.header .navbar h2 {
     float: left;
     text-transform: uppercase;
 }
-.header .navbar h2 span{
+
+.header .navbar h2 span {
     color: #16c76c;
 }
-.header .navbar ul{
+
+.header .navbar ul {
     list-style: none;
     padding-left: 0;
     overflow: hidden;
     float: right;
 }
-.header .navbar ul li{
+
+.header .navbar ul li {
     float: left;
     padding: 10px;
+}
+
+/*=========Features==========*/
+
+.features {
+    overflow: hidden;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.features .feat {
+    float: left;
+    width: 33.333%;
+    height: 150px;
+    background-color: #ddd; /* for layout only */
+}
+
+.features .feat h2 {
+    text-transform: uppercase;
+}
+
+/*============ About me ============*/
+
+.about-me {
+    background-color: #f2f2f2;
+    overflow: hidden;
+}
+
+.about-me .image {
+    float: left;
+    width: 40%;
+}
+
+.about-me .image img {
+    width: 100%;
+}
+
+.about-me .info {
+    float: left;
+    width: 60%;
+}
+
+.about-me .info .fields {
+    overflow: hidden;
+    margin: 20px;
+}
+
+.about-me .info .fields > div {
+    float: left;
+    width: 50%;
+    min-height: 100px;
+}
+
+/*======= My Skills =========*/
+
+.my-skills {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+
+.my-skills .skills,
+.my-skills .progress {
+    float: left;
+    width: 50%;
+}
+
+/*============ Resume ============*/
+.resume {
+    background: #f2f2f2;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+
+/*======= My Education =========*/
+
+.my-education {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+
+.my-education .main,
+.my-education .exp {
+    float: left;
+    width: 50%;
+}
+
+
+/*============ Resume ============*/
+.testimonials {
+    background: #f2f2f2;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
 }
